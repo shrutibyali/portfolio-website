@@ -14,6 +14,6 @@ Frontend: HTML5, CSS3.....
 Setup
 1. Clone the repository:
 
-git clone https://github.com/your-username/portfolio-website.git
+git clone https://github.com/shrutibyali/portfolio-website.git
 
 2. Open index.html in a browser.
