@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpor" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scale=no">
+    <title>Bio-data</title>
+    <style>
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+background-color:green ;
+color: white;
+text-align: center;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+width: 100%;
+height: 50px;
+position: fixed;
+top: 0;
+align: center;
+background-color: green;
+z-index: 99;
+}
+.nav__content {
+color: white;
+max-width: var(--max-width);
+margin: 0;
+padding: 1.5rem 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+nav .logo a {
+font-size: 1.5rem;
+font-weight: 600;
+color: var(--primary-color);
+transition: 0.3s;
+}
+nav .logo a:hover {
+color: var(--primary-color-dark);
+}
+nav .checkbox {
+display: none;
+}
+nav input {
+display: none;
+}
+nav .checkbox i {
+font-size: 2rem;
+color: var(--primary-color);
+cursor: pointer;
+}
+a {
+padding: 0.5rem 1rem;
+border: 2px solid transparent;
+text-decoration: none;
+font-weight: 600;
+color: var(--text-dark);
+transition: 0.3s;
+color: white;
+margin-left: 70px;
+font-size: 30px;
+text-align: center;
+}
+a:hover {
+border-top-color: var(--secondary-color);
+border-bottom-color: var(--secondary-color);
+/* color: var(--secondary-color); */
+color: magenta;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.biodatabox {
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;
+    padding: 50px;
+    position: relative;
+    border: 5px solid blueviolet;
+    border-radius: 1px 90px 1px 1px;
+}
+.biodatabox::before {
+    width: 50%;
+    height: 50%;
+    margin: -50px;
+    position: absolute;
+    border-radius: 1px 90px 1px 1px;
+    content: "";
+    background: url(images/1.jpg);
+    background-size: 100%;
+    opacity: .6;
+    z-index: -10;
+}
+table {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hed {
+    text-align: center;
+    font-size: 40px;
+    border:3px rgb(47, 18, 179);
+    font-weight: 600;
+}
+.heds {
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+    color: darkmagenta;
+    text-shadow: 15px 15px 40px white;
+}
+.hedsa {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: inherit;
+    color: rgb(247, 58, 11);
+    text-align: center;
+}
+.field {
+    border: 3px solid rgb(55, 0, 255);
+    border-radius: 20px;
+}   
+.name {
+    color: rgb(14, 209, 63);
+    font-weight: 550;
+}
+.ans {
+    font-size: 25px;
+}
+footer {
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href= "About.html">About</a>
+            <a href= "Resume.html">Resume</a>
+            <a href= "biodata.html">Bio-data</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="biodatabox">
+            <table cellspacing="10px">
+                <tr colspan="2">
+                    <td colspan="2" class="hed">Bio-Data<br>_____<br><br></td>
+                </tr>
+                <tr colspan="2">
+                    <td colspan="2" class="heds"> Personal Detail : ---<br><br></td>
+                </tr>
+                <tr>
+                    <td class="given"> Name </td>
+                    <td class="ans b"> :-&nbsp; <span class="name">Shruti S Byali</span></td>
+                </tr>
+                <tr>
+                    <td class="given"> Qualification </td>
+                    <td class="ans"> :-&nbsp;&nbsp; BE in Computer Science Engineering from RTE Society's Rural Engineering College Hulkoti, Gadag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="given"> Date of Birth </td>
+                    <td class="ans"> :-&nbsp; 14/09/2004 </td>
+                </tr>
+                <tr>
+                    <td class="given"> Height </td>
+                    <td class="ans"> :-&nbsp; 5.2 </td>
+                </tr>
+                <tr>
+                    <td class="given"> color </td>
+                    <td class="ans"> :-&nbsp; Fair </td>
+                </tr>
+                <tr>
+                    <td class="given"> Blood Group </td>
+                    <td class="ans"> :-&nbsp; AB + </td>
+                </tr>
+                <tr>
+                    <td class="given"> Hobbies </td>
+                    <td class="ans"> :-&nbsp; Playing chess with my mother,Watching Kabaddi and
+                    Reading Non-fiction Books </td>
+                </tr>
+            </table>
+            <fieldset class="field">
+                <legend class="hedsa">&nbsp;&nbsp;-- : Family detail : --&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+                <table cellspacing="20px">
+                    <tr>
+                        <td class="given"> Father name</td>
+                        <td class="ans"> :- Sangappa Byali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Mother name </td>
+                        <td class="ans"> :-&nbsp; Sumitra S Byali</td>
+                    </tr>
+                    <tr colspan="2">
+                        <td colspan="2" class="heds">Brothers :--</td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Brother name </td>
+                        <td class="ans"> :-&nbsp; Nop</td>
+                    </tr>
+                    <tr colspan="2">
+                        <td colspan="2" class="heds">Sisters :--</td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Elder Sister </td>
+                        <td class="ans"> :-&nbsp; Savita Sangappa Byali </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Younger Sister </td>
+                        <td class="ans"> :-&nbsp; Swapna Sangappa Byali </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table cellspace="20px">
+                <tr>
+                    <td colspan="2" class="heds"><br> Contact Detail –<br></td>
+                </tr>
+                <tr>
+                    <td class="given"><br> &nbsp;&nbsp;&nbsp;&nbsp;Address </td>
+                    <td class="ans"> :-&nbsp; A/p Kottalagi Tq:Athani District:Belagavi </td>
+                </tr>
+                <tr>
+                    <td class="given"><br>&nbsp;&nbsp;&nbsp;&nbsp;Mobil No  </td>
+                    <td class="ans"> :-&nbsp; 1)&nbsp;8494910664&nbsp;&nbsp; 2)&nbsp;7405265776 </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <p>&copy; 2024 Shruti byali. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
